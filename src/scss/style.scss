@@ -1,1 +1,30 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+.sidebar {
+    background-color: #363740;
+}
+
+.nav-link {
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.nav-item > .active {
+    color: white;
+    background-color: #3e4049;
+    border-left: 2px solid white;
+    padding-left: calc(2em - 2px);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.nav-item img {
+    width: 16px;
+    height: 16px;
+}
