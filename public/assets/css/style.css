@@ -11887,7 +11887,8 @@ nav {
   justify-content: space-between;
 }
 
-.graph-card > .list-group {
+.graph-card > .list-group,
+.content-block-grid > .card > .list-group {
   border-top: 0;
 }
 

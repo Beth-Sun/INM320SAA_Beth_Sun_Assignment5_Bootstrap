@@ -1,90 +1,90 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 body {
-    font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 .sidebar {
-    background-color: #363740;
+  background-color: #363740;
 }
 
 .nav-link {
-    padding-left: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+  padding-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav-item > .active {
-    color: white;
-    background-color: #3e4049;
-    border-left: 2px solid white;
-    padding-left: calc(2em - 2px);
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  color: white;
+  background-color: #3e4049;
+  border-left: 2px solid white;
+  padding-left: calc(2em - 2px);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .nav-item img {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .profile {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .graph-card {
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.graph-card>.list-group {
-    border-top: 0;
+.graph-card > .list-group,
+.content-block-grid > .card > .list-group {
+  border-top: 0;
 }
 
 .ticket-blocks-row {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-.ticket-blocks-row>div {
-    flex: 1;
+.ticket-blocks-row > div {
+  flex: 1;
 }
 
 .username {
-    display: none;
+  display: none;
 }
 
 @include media-breakpoint-up(sm) {
-    nav {
-        display: flex;
-        min-width: 200px;
-    }
+  nav {
+    display: flex;
+    min-width: 200px;
+  }
 
-    .username {
-        display: block;
-    }
+  .username {
+    display: block;
+  }
 
-    .ticket-blocks-row {
-        flex-direction: row;
-        gap: 1rem;
-    }
-    
+  .ticket-blocks-row {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 @include media-breakpoint-up(md) {
-    nav {
-        min-width: 280px;
-    }
-    .graph-card {
-        flex-direction: row;
-    }
-    .ticket-blocks-row {
-        flex-direction: row;
-        gap: 3rem;
-    }
+  nav {
+    min-width: 280px;
+  }
+  .graph-card {
+    flex-direction: row;
+  }
+  .ticket-blocks-row {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }
