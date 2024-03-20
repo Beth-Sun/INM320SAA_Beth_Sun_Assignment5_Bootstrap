@@ -11849,6 +11849,21 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+nav {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  nav {
+    display: flex;
+    min-width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    min-width: 280px;
+  }
+}
 .sidebar {
   background-color: #363740;
 }
@@ -11871,6 +11886,11 @@ body {
 .nav-item img {
   width: 16px;
   height: 16px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
