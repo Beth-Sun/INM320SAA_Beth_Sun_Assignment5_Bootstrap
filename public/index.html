@@ -155,8 +155,8 @@
         </ul>
       </div>
       <!-- row of 2 content blocks (grid) -->
-      <div class="grid my-4 content-block-grid">
-        <div class="card px-0 col-12 col-sm-6">
+      <div class="d-flex gap-3 my-4 content-block-grid">
+        <div class="card flex-grow-1">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-center">
               <h2 class=" fs-4 card-title">Unresolved tickets</h2>
@@ -184,6 +184,43 @@
           </ul>
         </div>
 
+        <div class="card flex-grow-1">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="fs-4 card-title">Tasks</h2>
+              <a href="#" class="text-decoration-none">View all</a>
+            </div>
+            <p class="card-text text-secondary">Today</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              <span class="fw-bold text-secondary">Create new task</span>
+              <button type="button" class="btn btn-sm btn-outline-secondary"><img src="assets/plus.svg"
+                  alt="Add"></button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tasks" value="Finish Ticket Update" id="task1">
+                <label class="form-check-label fw-bold" for="task1">Finish ticket update</label>
+              </div>
+              <span class="badge text-bg-warning d-flex align-items-center">URGENT</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tasks" value="Finish Ticket Update" id="task2">
+                <label class="form-check-label fw-bold" for="task2">Create new ticket example</label>
+              </div>
+              <span class="badge text-bg-success d-flex align-items-center">NEW</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tasks" value="Update ticket report" id="task3">
+                <label class="form-check-label fw-bold" for="task3">Update ticket report</label>
+              </div>
+              <span class="badge text-bg-secondary d-flex align-items-center">DEFAULT</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   </div>

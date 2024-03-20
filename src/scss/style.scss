@@ -48,7 +48,7 @@ nav {
   border-top: 0;
 }
 
-.ticket-blocks-row {
+.ticket-blocks-row,.content-block-grid {
   flex-direction: column;
 }
 
@@ -70,7 +70,7 @@ nav {
     display: block;
   }
 
-  .ticket-blocks-row {
+  .ticket-blocks-row, .content-block-grid {
     flex-direction: row;
     gap: 1rem;
   }
@@ -83,8 +83,7 @@ nav {
   .graph-card {
     flex-direction: row;
   }
-  .ticket-blocks-row {
-    flex-direction: row;
+  .ticket-blocks-row, .content-block-grid {
     gap: 3rem;
   }
 }
