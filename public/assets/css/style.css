@@ -11891,10 +11891,29 @@ nav {
   border-top: 0;
 }
 
+.ticket-blocks-row {
+  flex-direction: column;
+}
+
+.ticket-blocks-row > div {
+  flex: 1;
+}
+
+.username {
+  display: none;
+}
+
 @media (min-width: 576px) {
   nav {
     display: flex;
     min-width: 200px;
+  }
+  .username {
+    display: block;
+  }
+  .ticket-blocks-row {
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -11903,6 +11922,10 @@ nav {
   }
   .graph-card {
     flex-direction: row;
+  }
+  .ticket-blocks-row {
+    flex-direction: row;
+    gap: 3rem;
   }
 }
 
