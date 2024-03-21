@@ -5,10 +5,6 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-nav {
-  display: none;
-}
-
 .sidebar {
   background-color: #363740;
 }
@@ -38,52 +34,14 @@ nav {
   height: 50px;
 }
 
-.graph-card {
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.graph-card > .list-group,
-.content-block-grid > .card > .list-group {
-  border-top: 0;
-}
-
-.ticket-blocks-row,.content-block-grid {
-  flex-direction: column;
-}
-
-.ticket-blocks-row > div {
-  flex: 1;
-}
-
-.username {
-  display: none;
-}
-
 @include media-breakpoint-up(sm) {
   nav {
-    display: flex;
     min-width: 200px;
-  }
-
-  .username {
-    display: block;
-  }
-
-  .ticket-blocks-row, .content-block-grid {
-    flex-direction: row;
-    gap: 1rem;
   }
 }
 
 @include media-breakpoint-up(md) {
   nav {
     min-width: 280px;
-  }
-  .graph-card {
-    flex-direction: row;
-  }
-  .ticket-blocks-row, .content-block-grid {
-    gap: 3rem;
   }
 }
