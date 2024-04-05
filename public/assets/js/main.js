@@ -10,6 +10,10 @@ function renderConent({ overview, trends, unresolvedTickets, tasks }) {
   overview
     .map(createOverviewCard)
     .forEach((card) => overviewContainer.appendChild(card));
+  const trendsContainer = document.querySelector("#trends");
+  trends
+    .map(createTrendsTile)
+    .forEach((tile) => trendsContainer.appendChild(tile));
 }
 
 function createOverviewCard({ name, count }) {
@@ -44,4 +48,28 @@ function createOverviewCard({ name, count }) {
   d3.appendChild(h);
   d3.appendChild(p);
   return d1;
+}
+
+function createTrendsTile({ name, value }) {
+  /* <li class="list-group-item d-flex flex-column align-items-center justify-content-center flex-grow-1">
+    <h3 class="fs-6 text-secondary">Resolved</h3><span class="fw-bold">449</span>
+</li> */
+  const li = document.createElement("li");
+  li.classList.add(
+    "list-group-item",
+    "d-flex",
+    "flex-column",
+    "align-items-center",
+    "justify-content-center",
+    "flex-grow-1"
+  );
+  const h = document.createElement("h3");
+  h.classList.add("fs-6", "text-secondary");
+  h.innerText = name;
+  const span = document.createElement("span");
+  span.classList.add("fw-bold");
+  span.textContent = value;
+  li.appendChild(h);
+  li.appendChild(span);
+  return li;
 }
