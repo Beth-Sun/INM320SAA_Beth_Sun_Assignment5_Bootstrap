@@ -1,0 +1,31 @@
+{
+    "overview": [
+      { "name": "Unresolved", "count": 60 },
+      { "name": "Overdue", "count": 16 },
+      { "name": "Open", "count": 43 },
+      { "name": "On hold", "count": 64 }
+    ],
+    "trends": [
+      { "name": "Resolved", "value": "449" },
+      { "name": "Received", "value": "426" },
+      { "name": "Average first response time", "value": "33m" },
+      { "name": "Average response time", "value": "3h 8m" },
+      { "name": "Resolution within SLA", "value": "94%" }
+    ],
+    "unresolvedTickets": [
+      { "name": "Waiting on Feature Request", "value": 4238 },
+      { "name": "Awaiting Customer Response", "value": 1005 },
+      { "name": "Awaiting Developer Fix", "value": 914 },
+      { "name": "Pending", "value": 281 }
+    ],
+    "tasks": [
+      { "name": "Finish ticket update", "category": "URGENT", "complete": false },
+      {
+        "name": "Create new ticket example",
+        "category": "NEW",
+        "complete": false
+      },
+      { "name": "Update ticket report", "category": "DEFAULT", "complete": true }
+    ]
+  }
+  
