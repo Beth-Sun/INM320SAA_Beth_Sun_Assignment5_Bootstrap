@@ -1,23 +1,34 @@
+// load content.json when page loads
 window.addEventListener("load", () => {
   fetch("assets/data/content.json")
     .then((r) => r.json())
+    // call my function to render page content
     .then(renderConent)
     .catch(console.error);
 });
 
+// add content to page based on json data
 function renderConent({ overview, trends, unresolvedTickets, tasks }) {
+  // 1. find the section of page to add content (document.querySelector)
+  // 2. create a html element for each record (Array.map)
+  // 3. append html elements to the container (Array.forEach(container.appendChild))
+
+  // overview
   const overviewContainer = document.querySelector("#overview");
   overview.map(renderOverview).forEach((e) => overviewContainer.appendChild(e));
 
+  // trends
   const trendsContainer = document.querySelector("#trends");
   trends.map(renderTrends).forEach((e) => trendsContainer.appendChild(e));
 
+  // tickets
   const unresolvedTicketsContainer =
     document.querySelector("#unresolvedTickets");
   unresolvedTickets
     .map(renderUnresolvedTickets)
     .forEach((e) => unresolvedTicketsContainer.appendChild(e));
 
+  // tasks
   const tasksContainer = document.querySelector("#tasks");
   tasks.map(renderTasks).forEach((e) => tasksContainer.appendChild(e));
 }
